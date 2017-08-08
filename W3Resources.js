@@ -38,7 +38,22 @@ function GCD(num1, num2){
     return GCD(n2, r);
   }
 }
-console.log(GCD(12, 24));
+//Iterative
+function GCD_Iterative(num1, num2) { 
+  var n1 = num1 >= num2 ? num1 : num2; 
+  var n2 = num1 < num2 ? num1 : num2;  
+  var r;
+
+  while(r !== 0){
+    r = n1 % n2; 
+    n1 = n2;   
+    n2 = r;   
+  }
+  
+  return n1;
+}
+//console.log(GCD(12, 24));
+
 
 
 
