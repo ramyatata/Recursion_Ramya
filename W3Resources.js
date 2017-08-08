@@ -37,5 +37,12 @@ function GCD(num1, num2){
  } else {
    return GCD(n2, r);
  }
- 
 }
+
+
+
+
+
+
+
+
