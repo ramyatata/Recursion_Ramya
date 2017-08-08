@@ -1,3 +1,5 @@
+//Recursive
+//Iterative
 
 /* 1. Write a JavaScript program to calculate the factorial of a number. Go to the editor
 In mathematics, the factorial of a non-negative integer n, denoted by n!, 
@@ -23,3 +25,17 @@ function factorial_Iterative(n){
 
 //console.log(factorial(5));   //120
 
+/* 2. Write a JavaScript program to find the greatest common divisor (gcd) of two positive numbers */
+
+//recursive
+function GCD(num1, num2){
+ var n1 = num1 >= num2 ? num1: num2;
+ var n2 = num1 >= num2 ? num2: num1;
+ var r = n1%n2;
+ if(r === 0){
+   return n2;
+ } else {
+   return GCD(n2, r);
+ }
+ 
+}
