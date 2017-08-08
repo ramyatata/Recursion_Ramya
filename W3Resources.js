@@ -29,15 +29,16 @@ function factorial_Iterative(n){
 
 //recursive
 function GCD(num1, num2){
- var n1 = num1 >= num2 ? num1: num2;
- var n2 = num1 >= num2 ? num2: num1;
- var r = n1%n2;
- if(r === 0){
-   return n2;
- } else {
-   return GCD(n2, r);
- }
+  var n1 = num1 >= num2 ? num1: num2;
+  var n2 = num1 >= num2 ? num2: num1;
+  var r = n1%n2;
+  if(r === 0){
+    return n2;
+  } else {
+    return GCD(n2, r);
+  }
 }
+console.log(GCD(12, 24));
 
 
 
