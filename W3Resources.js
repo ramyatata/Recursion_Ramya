@@ -61,9 +61,21 @@ function GCD_Iterative(num1, num2) {
   return n1;
 }
 //console.log(GCD(12, 24));
+
 /*3. Write a JavaScript program to get the integers in range (x, y). Go to the editor
 Example : range(2, 9)
-Expected Output : [3, 4, 5, 6, 7, 8]*?
+Expected Output : [3, 4, 5, 6, 7, 8]*/
+
+//recursive
+
+//Iterative
+function range_Iterative(n1, n2){
+  var results = [];
+  for(var i = n1; i < n2; i++){
+    results.push(i);
+  }
+  return results;
+}
 
 
 
