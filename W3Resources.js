@@ -65,7 +65,15 @@ Example : range(2, 9)
 Expected Output : [3, 4, 5, 6, 7, 8]*/
 
 //recursive
-
+function range(n1, n2){
+  if(n2-n1 === 1) {
+    return [n2];
+  } 
+  list = range(n1, n2-1);
+  list.push(n2);
+  return list;
+}
+//console.log(range(2, 6));
 //Iterative
 function range_Iterative(n1, n2){
   var results = [];
