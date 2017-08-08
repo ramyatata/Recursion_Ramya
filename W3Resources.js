@@ -10,8 +10,7 @@ function factorial(n){
      return 1;
  } else {
      return n * factorial(n-1);
- }
-   
+ } 
 }
 
 //Iterative
@@ -57,7 +56,6 @@ function GCD_Iterative(num1, num2) {
     n1 = n2;   
     n2 = r;   
   }
-  
   return n1;
 }
 //console.log(GCD(12, 24));
